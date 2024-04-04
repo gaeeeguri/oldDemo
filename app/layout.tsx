@@ -1,12 +1,8 @@
-import "@/styles/globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-import { NavBar } from "@/components/navBar"
-import {Metadata} from "next";
-import {Inter} from "next/font/google"
-import {ReactNode} from "react";
-import {Providers} from "@/components/providers";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,20 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-    <body
-      className={`${inter.variable} grid min-h-full grid-rows-[auto_1fr_auto] bg-white font-sans antialiased transition-colors dark:bg-gray-900`}
-    >
-    <>
-      <Providers>
-        <main className='container mx-auto px-4'>{children}</main>
-        <NavBar />
-      </Providers>
-    </>
-    </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
