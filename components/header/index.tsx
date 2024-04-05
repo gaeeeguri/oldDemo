@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Headroom from "react-headroom"
-export function Header () {
+import Headroom from 'react-headroom';
+export function Header() {
   return (
     <Headroom
       style={{
@@ -11,5 +11,5 @@ export function Header () {
     >
       hi
     </Headroom>
-  )
+  );
 }

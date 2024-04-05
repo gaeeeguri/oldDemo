@@ -3,5 +3,5 @@ export default function Index() {
     <>
       <h1>search!</h1>
     </>
-  )
+  );
 }
