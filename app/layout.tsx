@@ -23,7 +23,7 @@ export default function RootLayout({
     >
     <>
       <Providers>
-        <main className='container mx-auto px-4'>{children}</main>
+        <main className='container mx-auto px-4 max-w-md'>{children}</main>
         <NavBar/>
       </Providers>
     </>
