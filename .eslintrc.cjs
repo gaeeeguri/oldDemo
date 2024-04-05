@@ -51,13 +51,13 @@ module.exports = {
     'arrow-spacing': ['error', { before: true, after: true }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'react/prop-types': 'off',
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', 'unix'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
 
     'arrow-body-style': 'off',
 
-    'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'crlf' }]
+    'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'lf' }]
   }
 };
