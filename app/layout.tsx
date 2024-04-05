@@ -18,14 +18,14 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
         className={`${inter.variable} grid min-h-full grid-rows-[auto_1fr_auto] bg-white font-sans antialiased transition-colors dark:bg-gray-900`}
       >
         <>
           <Providers>
             <Header />
-            <main className="container mx-auto px-4 max-w-md">{children}</main>
+            <main className='container mx-auto px-4 max-w-md'>{children}</main>
             <NavBar />
           </Providers>
         </>
