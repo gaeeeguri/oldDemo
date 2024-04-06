@@ -23,6 +23,10 @@
     .bg-primary {
         @apply bg-white dark:bg-gray-900
     }
+    /*useColorModeValue('#f0e7db', '#202023')*/
+    .button-primary {
+        @apply bg-gray-900 dark:bg-white
+    }
 
     /* these are for the button with the moving gradient */
     @keyframes buttonStroke {

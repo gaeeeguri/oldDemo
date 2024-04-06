@@ -1,7 +1,16 @@
+import Class from '@/components/class';
+
 export default function Index() {
   return (
     <>
-      <h1>golf</h1>
+      <Class />
+      <Class />
+      <Class />
+      <Class />
+      <Class />
+      <Class />
+      <Class />
+      <Class />
     </>
   );
 }
